@@ -76,4 +76,26 @@ sudo a2enmod ssl
 service apache2 restart
 ```
 
+Docker Command :
+---------------
+```
+#Check Container List
+docker container ls
+
+#Running All Container
+docker start $(docker ps -a -q)
+
+#Stop Container
+docker container stop (CONTAINER_NAME)
+
+#Delete Container
+docker container rm (CONTAINER_NAME)
+
+#Start Container
+docker container start (CONTAINER_NAME)
+
+#Remote Container
+docker exec -t -i (CONTAINER_NAME) /bin/bash
+```
+
 
